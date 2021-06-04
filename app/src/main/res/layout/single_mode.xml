@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.5"
+    android:background="@color/black"
+    android:padding="@dimen/widget_margin"
+    android:theme="@style/ThemeOverlay.RoomQuery.AppWidgetContainer">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewLableRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前教室"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-/-"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewLableNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="接下来"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="将占"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="70" />
+
+    </LinearLayout>
+
+</RelativeLayout>

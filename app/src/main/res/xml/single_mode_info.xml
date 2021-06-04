@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="chiro.work.roomquery.SingleModeActivity"
+    android:initialKeyguardLayout="@layout/single_mode"
+    android:initialLayout="@layout/single_mode"
+    android:minWidth="110dp"
+    android:minHeight="110dp"
+    android:previewImage="@drawable/example_appwidget_preview"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="1000"
+    android:widgetCategory="home_screen|keyguard"></appwidget-provider>
